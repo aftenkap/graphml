@@ -1,0 +1,143 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+
+	<groupId>org.jutility</groupId>
+	<artifactId>graphml</artifactId>
+	<version>1.0.0</version>
+	<name>GraphML library</name>
+	<description>GraphML Java class files generated from the GraphML XSD.
+	</description>
+
+	<url>http://jutility.org/graphml</url>
+	<organization>
+		<name>jutility.org</name>
+		<url>http://jutility.org</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>aftenkap</id>
+			<name>Peter J. Radics</name>
+			<email>peter.radics@jutility.org</email>
+		</developer>
+	</developers>
+
+	<inceptionYear>2011</inceptionYear>
+
+	<packaging>jar</packaging>
+
+	<scm>
+		<url>scm:git:git@github.com:aftenkap/graphml.git</url>
+		<connection>scm:git:git@github.com:aftenkap/graphml.git</connection>
+		<developerConnection>scm:git:git@github.com:aftenkap/graphml.git
+		</developerConnection>
+		<tag>master</tag>
+	</scm>
+
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://github.com/aftenkap/jutility/issues</url>
+	</issueManagement>
+
+	<properties>
+		<project.build.sourceEncoding>utf8</project.build.sourceEncoding>
+		<java.version>1.6</java.version>
+	</properties>
+
+	<build>
+		<sourceDirectory>src/main/java</sourceDirectory>
+        <testSourceDirectory>src/test/java</testSourceDirectory>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>
+											org.codehaus.mojo
+										</groupId>
+										<artifactId>
+											license-maven-plugin
+										</artifactId>
+										<versionRange>
+											[1.7,)
+										</versionRange>
+										<goals>
+											<goal>
+												update-file-header
+											</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore></ignore>
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9.1</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<version>1.7</version>
+				<executions>
+					<execution>
+						<id>first</id>
+						<goals>
+							<goal>update-file-header</goal>
+						</goals>
+						<phase>process-sources</phase>
+					</execution>
+					<execution>
+						<id>download-licenses</id>
+						<goals>
+							<goal>download-licenses</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<licenseName>apache_v2</licenseName>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9.1</version>
+				<configuration>
+					<outputDirectory>doc/</outputDirectory>
+					<show>protected</show>
+					<detectLinks>true</detectLinks>
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
+</project>
