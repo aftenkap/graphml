@@ -1,4 +1,13 @@
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://graphml.graphdrawing.org/xmlns", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
+/**
+ * This package provides a full implementation of the GraphML data types.
+ *
+ * @author Peter J. Radics
+ * @version 1.0.0
+ * @since 0.1.0
+ */
+@javax.xml.bind.annotation.XmlSchema(
+        namespace = "http://graphml.graphdrawing.org/xmlns",
+        elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
 package org.graphdrawing.graphml;
 
 //@formatter:off
