@@ -1,11 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 
 	<groupId>org.jutility</groupId>
 	<artifactId>graphml</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>GraphML library</name>
 	<description>GraphML Java class files generated from the GraphML XSD.
 	</description>
@@ -33,7 +32,7 @@
 		<connection>scm:git:git@github.com:aftenkap/graphml.git</connection>
 		<developerConnection>scm:git:git@github.com:aftenkap/graphml.git
 		</developerConnection>
-		<tag>master</tag>
+		<tag>graphml-1.0.0</tag>
 	</scm>
 
 	<issueManagement>
@@ -96,7 +95,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore />
 									</action>
 								</pluginExecution>
 							</pluginExecutions>
