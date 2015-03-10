@@ -1,5 +1,7 @@
 package org.graphdrawing.graphml;
 
+
+// @formatter:off
 /*
  * #%L
  * GraphML library
@@ -19,7 +21,7 @@ package org.graphdrawing.graphml;
  * limitations under the License.
  * #L%
  */
-
+// @formatter:on
 
 
 import javax.xml.bind.annotation.XmlEnum;
@@ -30,24 +32,24 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * <p>
  * Java class for graph.edgedefault.type.
- * 
+ * </p>
  * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * <p>
+ * </p>
  * 
  * <pre>
- * &lt;simpleType name="graph.edgedefault.type">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *     &lt;enumeration value="directed"/>
- *     &lt;enumeration value="undirected"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="graph.edgedefault.type"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN"&gt;
+ *     &lt;enumeration value="directed"/&gt;
+ *     &lt;enumeration value="undirected"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  * @author Peter J. Radics
  * @version 1.0.0
- * @since 0.0.1
+ * @since 0.1.0
  */
 @XmlType(name = "graph.edgedefault.type")
 @XmlEnum

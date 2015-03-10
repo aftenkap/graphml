@@ -1,6 +1,8 @@
 package org.graphdrawing.graphml;
 
 /*
+ // @formatter:off
+/*
  * #%L
  * GraphML library
  * %%
@@ -19,7 +21,7 @@ package org.graphdrawing.graphml;
  * limitations under the License.
  * #L%
  */
-
+// @formatter:on
 
 
 import javax.xml.bind.annotation.*;
@@ -41,12 +43,12 @@ import javax.xml.bind.annotation.*;
  * this class.
  * 
  * <pre>
- * &lt;complexType name="data-extension.type">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="data-extension.type"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * @author Peter J. Radics
@@ -63,7 +65,7 @@ public class KeyDataExtension {
 
     /**
      * 
-     * Extension mechanism for the content of <data> and <default>. The complex
+     * Extension mechanism for the content of &lt;data&gt; and &lt;default&gt;. The complex
      * type data-extension.type is empty per default. Users may redefine this
      * type in order to add content to the complex types data.type and
      * default.type which are extensions of data-extension.type.

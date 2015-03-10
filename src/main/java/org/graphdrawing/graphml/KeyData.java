@@ -1,24 +1,26 @@
 package org.graphdrawing.graphml;
 
+//@formatter:off
 /*
- * #%L
- * GraphML library
- * %%
- * Copyright (C) 2011 - 2014 jutility.org
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
- */
+* #%L
+* GraphML library
+* %%
+* Copyright (C) 2011 - 2014 jutility.org
+* %%
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+* 
+*      http://www.apache.org/licenses/LICENSE-2.0
+* 
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+* #L%
+*/
+//@formatter:on
 
 
 
@@ -42,16 +44,16 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * this class.
  * 
  * <pre>
- * &lt;complexType name="data.type">
- *   &lt;complexContent>
- *     &lt;extension base="{http://graphml.graphdrawing.org/xmlns}data-extension.type">
- *       &lt;attGroup ref="{http://graphml.graphdrawing.org/xmlns}data.extra.attrib"/>
- *       &lt;attribute name="key" use="required" type="{http://www.w3.org/2001/XMLSchema}NMTOKEN" />
- *       &lt;attribute name="time" type="{http://www.w3.org/2001/XMLSchema}long" default="0" />
- *       &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}NMTOKEN" />
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="data.type"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://graphml.graphdrawing.org/xmlns}data-extension.type"&gt;
+ *       &lt;attGroup ref="{http://graphml.graphdrawing.org/xmlns}data.extra.attrib"/&gt;
+ *       &lt;attribute name="key" use="required" type="{http://www.w3.org/2001/XMLSchema}NMTOKEN" /&gt;
+ *       &lt;attribute name="time" type="{http://www.w3.org/2001/XMLSchema}long" default="0" /&gt;
+ *       &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}NMTOKEN" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * @author Peter J. Radics
